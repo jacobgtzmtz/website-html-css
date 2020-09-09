@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web de mi empresa</title>
+    <script src="https://kit.fontawesome.com/1fe6ee588c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="myicon">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </div>
+        <ul class="sm-screen">
+            <li><a href="./index.html">Home</a> </li>
+            <li><a href="./quienes.html">Quienes somos</a></li>
+            <li><a href="./galeria">Galeria</a></li>
+            <li><a href="contactanos">Contactanos</a></li>
+        </ul>
+    </nav>
+    <div id="wrapper">
+        <header>
+            <h1>Sitio web de mi empresa</h1>
+        </header>
+        <section id="section1">
+            <h2>Seccion 1</h2>
+            <p>Lorem Ipsum dolor sit amet, <a href="#">consectetur adipiscing elit,</a> sed do eiusmod tempor incididunt
+                ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.</p>
+            <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.</p>
+        </section>
+        <section id="section2">
+            <h2>Seccion 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, exercitationem ut voluptatem commodi, eos
+                cum iusto nulla inventore vel voluptas porro a itaque. Numquam dolores accusamus corporis odio illum dicta officiis tenetur, sapiente, cum saepe, magni
+                sequi molestiae esse repudiandae beatae obcaecati facilis sunt suscipit placeat expedita quas maiores.
+                Dolorum dolor, sunt, nam quis molestiae minima nobis ut vel in harum, amet praesentium delectus
+                accusamus sint.</p>
+            <p>Minus in provident doloremque ad quidem totam eveniet,  in nostrum sunt unde est
+                ipsa asperiores cupiditate quasi maiores quibusdam fugiat aperiam laboriosam qui porro placeat
+                dignissimos. Dolorem delectus tempora, laborum dolorum architecto qui maiores, dolore atque deleniti
+                aliquam quidem provident sit, et soluta tempore sunt nesciunt voluptate adipisci blanditiis explicabo
+                labore? Sunt cupiditate dolorem, culpa iste porro corrupti et ab vitae laborum. Quibusdam ex reiciendis
+                eveniet sed quidem exercitationem deleniti perferendis? Impedit.</p>
+        </section>
+        <aside>
+            <h2>Barra lateral</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, rerum. Similique maxime animi quis
+                quibusdam quasi eum voluptate, sequi delectus consectetur recusandae placeat. Magni ab porro, dolore
+                veritatis, obcaecati corporis sequi laboriosam saepe, laborum eum ad cum officia quos quidem </p>
+                <p>
+                    <img src="http://via.placeholder.com/350x150" alt="">
+                </p>
+                <p>
+                consequuntur excepturi pariatur commodi animi! Enim incidunt a veritatis architecto
+                ab reiciendis nostrum debitis dolorem blanditiis modi aspernatur itaque, consectetur recusandae ut dolor
+                commodi, aliquid quas laboriosam delectus. Nihil dolorum nemo recusandae.</p>
+            
+        </aside>
+        <footer>Copyrigth (c)2020</footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    activeSetup();
+   $('.myicon').click(function(e){
+       $('#navbar ul').toggleClass('sm-screen');
+   }) 
+
+   function activeSetup() {
+       var urlPath = window.location.pathname;
+       $('nav a').each(function(){
+           if(urlPath === $(this).context.pathname){
+               $(this).closest('li').addClass('active');
+           }
+       })
+   }
+})
+</script>
+    
+</body>
+
+</html>

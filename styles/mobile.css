@@ -1,0 +1,94 @@
+@media screen and (max-width: 820px){
+
+    #wrapper {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    #wrapper header {
+        border-radius: 0;
+        padding: 0
+    }
+
+    #section1 {
+        padding: 3%;
+        width: 43%;
+    }
+    
+    #section2 {
+        float: right;
+        padding: 3%;
+        width: 43%;
+    }
+    
+    #wrapper aside{
+        clear: both;
+        padding: 5px;
+        width: 90%;
+    }
+
+    #wrapper footer {
+        padding: 0px;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 600px){
+
+    #wrapper {
+        width: auto;
+    }
+
+    #wrapper header {
+        height: auto;
+        padding: 0;
+    }
+
+    #section1 {
+        float: none;
+        margin: 0;
+        width: auto;
+    }
+    
+    #section2 {
+        float: none;
+        margin: 0;
+        width: auto;
+    }
+    
+    #wrapper aside {
+        padding: 10px;
+        width: auto;
+    }
+
+    #wrapper footer {
+        width: auto;
+    }
+
+    /* */
+    .sm-screen {
+        display: none;
+    }
+    
+    #navbar li {
+       float: none; 
+       display: block;
+    }
+
+    #navbar li a{
+        padding: 5px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .myicon {
+       display: block;
+       cursor: pointer;
+    }
+
+
+
+}
+
